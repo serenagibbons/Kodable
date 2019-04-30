@@ -218,7 +218,7 @@ public class Controller {
 
 	}
 
-	void changeScene(ActionEvent event, String fileName) throws IOException {
+	void changeScene(ActionEvent event, String fileName) throws IOException { //Method to change scene
 		Parent root = FXMLLoader.load(getClass().getResource(fileName));
 		Scene sn = new Scene(root);
 		Stage stage = (Stage) ((Node) (event.getSource())).getScene().getWindow();
