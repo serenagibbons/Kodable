@@ -82,7 +82,7 @@ public class Controller {
 		case "move1":
 			move1.setImage(img);
 			break;
-		case "move2b":
+		case "move2":
 			move2.setImage(img);
 			break;
 		case "move3":
