@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kodable.Controller">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kodable.Controller">
    <children>
       <Pane layoutX="-7.0" prefHeight="700.0" prefWidth="900.0">
          <children>
@@ -41,7 +41,7 @@
                            </children></Pane>
                         <Pane layoutX="404.0" layoutY="10.0" prefHeight="98.0" prefWidth="574.0">
                            <children>
-                              <Button fx:id="btnLeft" layoutX="217.0" layoutY="27.0" mnemonicParsing="false"  prefHeight="45.0" prefWidth="45.0">
+                              <Button fx:id="btnLeft" layoutX="217.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
                                  <graphic>
                                     <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
                                        <image>
@@ -302,11 +302,6 @@
                               <Image url="@../../res/block1.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="75.0" fitWidth="60.0" GridPane.valignment="BASELINE">
-                           <image>
-                              <Image url="@../../res/pipeTop.png" />
-                           </image>
-                        </ImageView>
                         <ImageView fitHeight="55.0" fitWidth="55.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
                            <image>
                               <Image url="@../../res/question_block.jpg" />
@@ -550,6 +545,11 @@
                         <ImageView fitHeight="65.0" fitWidth="55.0" GridPane.columnIndex="16" GridPane.rowIndex="2">
                            <image>
                               <Image url="@../../res/pipeR.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="mario" fitHeight="55.0" fitWidth="55.0" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../../res/mario.gif" />
                            </image>
                         </ImageView>
                      </children>
