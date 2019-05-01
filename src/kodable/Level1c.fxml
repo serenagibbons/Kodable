@@ -210,11 +210,6 @@
                   <Image url="@../../res/block1.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="346.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="2">
-               <image>
-                  <Image url="@../../res/pipeR.png" />
-               </image>
-            </ImageView>
             <ImageView fx:id="mario" fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
                <image>
                   <Image url="@../../res/mario.gif" />
@@ -395,6 +390,11 @@
                   <Image url="@../../res/block1.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="346.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../res/pipeR.png" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="796.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../res/block1.png" />
@@ -447,5 +447,5 @@
             <Image url="@../../res/LevelComplete.png" />
          </image>
       </ImageView>
-      <Button fx:id="nextLevel1c" layoutX="420.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
+      <Button fx:id="returnBtn" layoutX="375.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Return to Level Selection" />
    </AnchorPane>
