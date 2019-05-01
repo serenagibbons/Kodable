@@ -1,11 +1,11 @@
 package kodable;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javafx.animation.Animation.Status;
 import javafx.animation.PathTransition;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -29,7 +29,12 @@ import javafx.util.Duration;
 public class Controller {
 
 	private Path path = new Path();
+	private ArrayList<String> seq = new ArrayList<String>();	// User-created sequence
+	private ArrayList<String> soln = new ArrayList<String>();	// Solution sequence
+
 	private String value = "";
+	private String direction = "";
+
 
 	@FXML
 	private ImageView mario;
@@ -48,15 +53,19 @@ public class Controller {
 		switch(value) {
 		case "left":
 			img = new Image("ArrowLeft.jpg");
+			direction = "left";
 			break;
 		case "up":
 			img = new Image("ArrowUp.jpg");
+			direction = "up";
 			break;
 		case "right":
 			img = new Image("ArrowRight.jpg");
+			direction = "right";
 			break;
 		case "down":
 			img = new Image("ArrowDown.jpg");
+			direction = "down";
 			break;
 		case "yellowIf":
 			img = new Image("yellow-square.jpg");
@@ -92,6 +101,9 @@ public class Controller {
 			move4.setImage(img);
 			break;
 		}
+		
+		seq.add(direction);	// create sequence based on user arrow input
+		direction="";
 
 	}
 
@@ -101,13 +113,80 @@ public class Controller {
 			event.acceptTransferModes(TransferMode.COPY);
 		}
 	}
-
-	/*FIX*/
-	// create sequence based on user arrow input
-	boolean isCorrectSequence() {
-		if (move1.getImage().toString()=="ArrowRight.jpg")
-			return true;
-		return false;
+	
+	// check if user sequence is correct
+	boolean isCorrectSequence(ActionEvent event) {
+		
+		value = ((Button)event.getSource()).getId();
+		
+		switch(value) {
+		case "playLvl1a":
+			// Create solution sequence for level1a
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			break;
+		case "playLvl1b":
+			// Create solution sequence for level1b
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			break;
+		case "playLvl1c":
+			// Create solution sequence for level1c
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			break;
+		case "playLvl2a":
+			// create solution sequence for level2a
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			break;
+		case "playLvl2b":
+			// Create solution sequence for level2b
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("down");
+			break;
+		case "playLvl2c":
+			// Create solution sequence for level2c
+			break;
+		case "playLvl3a":
+			// Create solution sequence for level3a
+			break;
+		case "playLvl3b":
+			// Create solution sequence for level3b
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			break;
+		case "playLvl3c":
+			// Create solution sequence for level3c
+			break;
+		}
+		
+		// if user sequence is empty
+		if (seq.isEmpty())
+			return false;
+		
+		// check user sequence (seq) against solution sequence (soln)
+		for (int i = 0; i < soln.size()-1; i++) {
+			if (!soln.get(i).equals(seq.get(i)))
+				return false;
+		}
+		return true;
 	}
 
 	@FXML
@@ -163,6 +242,9 @@ public class Controller {
 	@FXML
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
+			
+			if (!isCorrectSequence(event))
+				return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
