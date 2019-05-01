@@ -260,7 +260,7 @@ public class Controller {
 			// Create a solution path for level2a
 			path.getElements().add(new HLineTo(240));
 			path.getElements().add(new VLineTo(245));
-			path.getElements().add(new HLineTo(835));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl2b":
 			// Create a solution path for level2b
@@ -268,6 +268,7 @@ public class Controller {
 			path.getElements().add(new VLineTo(-80));
 			path.getElements().add(new HLineTo(835));
 			path.getElements().add(new VLineTo(140));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl2c":
 			// Create a solution path for level2b

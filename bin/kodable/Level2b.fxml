@@ -294,11 +294,6 @@
                               <Image url="@../../bin/block3.PNG" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="63.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" GridPane.columnIndex="16" GridPane.rowIndex="6">
-                           <image>
-                              <Image url="@../../bin/pipe.png" />
-                           </image>
-                        </ImageView>
                         <ImageView fx:id="mario" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
                            <image>
                               <Image url="@../../bin/mario.gif" />
@@ -552,6 +547,11 @@
                         <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="2">
                            <image>
                               <Image url="@../../res/coin.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" GridPane.columnIndex="16" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../../bin/pipe.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="2">
