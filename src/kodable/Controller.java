@@ -199,6 +199,7 @@ public class Controller {
 			changeScene(event, "Level1a.fxml");
 			break;
 		case "Btn1b":
+			changeScene(event, "Level1b.fxml");
 			break;
 		case "Btn1c":
 			changeScene(event, "Level1c.fxml");
@@ -210,13 +211,16 @@ public class Controller {
 			changeScene(event, "Level2b.fxml");
 			break;
 		case "Btn2c":
+			changeScene(event, "Level2c.fxml");
 			break;
 		case "Btn3a":
+			changeScene(event, "Level3a.fxml");
 			break;
 		case "Btn3b":
 			changeScene(event, "Level3b.fxml");
 			break;
 		case "Btn3c":
+			changeScene(event, "Level3c.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");
