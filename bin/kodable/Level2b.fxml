@@ -26,11 +26,10 @@
                         <Pane prefHeight="98.0" prefWidth="322.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="247.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="177.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffb3" height="50.0" layoutX="177.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="107.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="37.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <ImageView fx:id="move1" fitHeight="50.0" fitWidth="50.0" layoutX="37.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
-                              <ImageView fx:id="move2b" fitHeight="50.0" fitWidth="50.0" layoutX="107.0" layoutY="27.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
                               <ImageView fx:id="move2" fitHeight="50.0" fitWidth="50.0" layoutX="107.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
                               <ImageView fx:id="move3" fitHeight="50.0" fitWidth="50.0" layoutX="177.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
                               <ImageView fx:id="move4" fitHeight="50.0" fitWidth="50.0" layoutX="247.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />

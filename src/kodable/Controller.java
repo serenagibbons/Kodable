@@ -22,6 +22,7 @@ import javafx.scene.input.TransferMode;
 import javafx.scene.shape.HLineTo;
 import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.VLineTo;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -46,8 +47,8 @@ public class Controller {
 	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b, nextLevel2c, returnBtn;
 
 	@FXML
-	private ImageView move1, move2, move2b, move3, move4, move5; // User-created moves by dropping arrows
-
+	private ImageView move1, move2, move3, move4, move5; // User-created moves by dropping arrows
+	
 	@FXML
 	private ImageView left, up, right, down, yellowIf;	// Arrow options to drag
 
