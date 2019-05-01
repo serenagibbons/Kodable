@@ -43,7 +43,7 @@ public class Controller {
     private ImageView lvlComplete;
 	
 	@FXML	// buttons to transition to next level
-	private Button nextLevel1a, nextLevel1b, nextLevel1c, nextLevel2a, nextLevel2b, nextLevel2c;
+	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b, nextLevel2c, returnBtn;
 
 	@FXML
 	private ImageView move1, move2, move2b, move3, move4, move5; // User-created moves by dropping arrows
@@ -257,7 +257,7 @@ public class Controller {
 			// Create a solution path for level1c
 			path.getElements().add(new HLineTo(310));
 			path.getElements().add(new VLineTo(-80));
-			path.getElements().add(new HLineTo(835));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl2a":
 			// Create a solution path for level2a
@@ -321,7 +321,7 @@ public class Controller {
 				fadeIn(event, nextLevel1b);
 				break;
 			case "playLvl1c":
-				fadeIn(event, nextLevel1c);
+				fadeIn(event, returnBtn);
 				break;
 			case "playLvl2a":
 				fadeIn(event, nextLevel2a);
@@ -358,7 +358,7 @@ public class Controller {
 		case "nextLevel1b":
 			changeScene(event, "Level1c.fxml");
 			break;
-		case "nextLevel1c":
+		case "returnBtn":
 			changeScene(event, "LevelSelector.fxml");
 			break;
 		case "nextLevel2a":
