@@ -573,4 +573,10 @@
          </children>
       </Pane>
    </children>
+   <ImageView fx:id="lvlComplete" fitHeight="400.0" fitWidth="500.0" layoutX="200.0" layoutY="150.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/LevelComplete.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nextLevel2b" layoutX="420.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
 </AnchorPane>
