@@ -44,7 +44,7 @@ public class Controller {
     private ImageView lvlComplete;
 	
 	@FXML	// buttons to transition to next level
-	private Button nextLevel1a, nextLevel1b, nextLevel1c, nextLevel2a, nextLevel2b;
+	private Button nextLevel1a, nextLevel1b, nextLevel1c, nextLevel2a, nextLevel2b, nextLevel2c;
 
 	@FXML
 	private ImageView move1, move2, move2b, move3, move4, move5; // User-created moves by dropping arrows
@@ -166,6 +166,11 @@ public class Controller {
 			break;
 		case "playLvl2c":
 			// Create solution sequence for level2c
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
 			break;
 		case "playLvl3a":
 			// Create solution sequence for level3a
@@ -241,6 +246,14 @@ public class Controller {
 			path.getElements().add(new HLineTo(835));
 			path.getElements().add(new VLineTo(140));
 			break;
+		case "playLvl2c":
+			// Create a solution path for level2b
+			path.getElements().add(new HLineTo(340));
+			path.getElements().add(new VLineTo(170));
+			path.getElements().add(new HLineTo(460));
+			path.getElements().add(new VLineTo(27));
+			path.getElements().add(new HLineTo(860));
+			break;
 		case "playLvl3b":
 			// Create a solution path for level3b
 			path.getElements().add(new HLineTo(250));
@@ -290,6 +303,9 @@ public class Controller {
 			case "playLvl2b":
 				fadeIn(event, nextLevel2b);
 				break;
+			case "playLvl2c":
+				fadeIn(event, nextLevel2c);
+				break;
 			case "playLvl3b":
 				//fadeIn(event, nextLevel2b);
 			}
@@ -324,6 +340,9 @@ public class Controller {
 			break;
 		case "nextLevel2b":
 			changeScene(event, "Level2c.fxml");
+			break;
+		case "nextLevel2c":
+			changeScene(event, "LevelSelector.fxml");
 			break;
 		}
     }

@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kodable.Controller">
    <children>
@@ -23,66 +22,48 @@
                <children>
                   <HBox prefHeight="100.0" prefWidth="900.0">
                      <children>
-                        <Pane prefHeight="98.0" prefWidth="322.0">
+                        <Pane prefHeight="98.0" prefWidth="410.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="247.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="177.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="107.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="37.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                              <ImageView fx:id="dir1" fitHeight="50.0" fitWidth="50.0" layoutX="37.0" layoutY="26.0" pickOnBounds="true" />
-                              <ImageView fx:id="dir2" fitHeight="50.0" fitWidth="50.0" layoutX="107.0" layoutY="26.0" pickOnBounds="true" />
-                              <ImageView fx:id="dir3" fitHeight="50.0" fitWidth="50.0" layoutX="177.0" layoutY="26.0" pickOnBounds="true" />
-                              <ImageView fx:id="dir4" fitHeight="50.0" fitWidth="50.0" layoutX="247.0" layoutY="26.0" pickOnBounds="true" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="317.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <ImageView fx:id="move1" fitHeight="50.0" fitWidth="50.0" layoutX="37.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
+                              <ImageView fx:id="move2" fitHeight="50.0" fitWidth="50.0" layoutX="107.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
+                              <ImageView fx:id="move3" fitHeight="50.0" fitWidth="50.0" layoutX="177.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
+                              <ImageView fx:id="move4" fitHeight="50.0" fitWidth="50.0" layoutX="247.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
+                              <ImageView fx:id="move5" fitHeight="50.0" fitWidth="50.0" layoutX="316.0" layoutY="26.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" />
                            </children></Pane>
-                        <Pane layoutX="404.0" layoutY="10.0" prefHeight="98.0" prefWidth="574.0">
+                        <Pane layoutX="404.0" layoutY="10.0" prefHeight="98.0" prefWidth="470.0">
                            <children>
-                              <Button fx:id="btnLeft" layoutX="217.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
-                                 <graphic>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                                       <image>
-                                          <Image url="@../../bin/ArrowLeft.jpg" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </Button>
-                              <Button fx:id="btnUp" layoutX="287.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
-                                 <graphic>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                                       <image>
-                                          <Image url="@../../bin/ArrowUP.jpg" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </Button>
-                              <Button fx:id="btnRight" layoutX="357.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
-                                 <graphic>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                                       <image>
-                                          <Image url="@../../bin/ArrowRight.jpg" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </Button>
-                              <Button fx:id="btnDown" layoutX="427.0" layoutY="27.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
-                                 <graphic>
-                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
-                                       <image>
-                                          <Image url="@../../bin/ArrowDown.jpg" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </Button>
-                              <Button fx:id="btnPlayLevel" layoutX="29.0" layoutY="21.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="Go!">
-                                 <font>
-                                    <Font name="Courier New Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btnReset" layoutX="107.0" layoutY="21.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="Reset">
-                                 <font>
-                                    <Font name="Courier New Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btnIf" layoutX="497.0" layoutY="27.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" />
+                              <Button fx:id="playLvl2c" layoutX="-22.0" layoutY="21.0" mnemonicParsing="false" onAction="#playPath" prefHeight="56.0" prefWidth="56.0" text="Go!" />
+                              <Button fx:id="btnReset" layoutX="56.0" layoutY="21.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="Reset" />
+                              <ImageView fx:id="left" fitHeight="45.0" fitWidth="45.0" layoutX="132.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../bin/ArrowLeft.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="up" fitHeight="45.0" fitWidth="45.0" layoutX="202.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../bin/ArrowUP.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="down" fitHeight="45.0" fitWidth="45.0" layoutX="342.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../bin/ArrowDown.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="right" fitHeight="45.0" fitWidth="45.0" layoutX="272.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../bin/ArrowRight.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="yellowIf" fitHeight="45.0" fitWidth="45.0" layoutX="412.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../res/yellow-square.jpg" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                      </children>
@@ -522,11 +503,6 @@
                               <Image url="@../../res/plant.gif" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="80.0" fitWidth="50.0" GridPane.columnIndex="16" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
-                           <image>
-                              <Image url="@../../res/pipeR.png" />
-                           </image>
-                        </ImageView>
                         <ImageView fitHeight="145.0" fitWidth="100.0" GridPane.columnIndex="15" GridPane.rowIndex="8">
                            <image>
                               <Image url="@../../res/plant.gif" />
@@ -822,11 +798,23 @@
                               <Image url="@../../res/block3.PNG" />
                            </image>
                         </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="55.0" GridPane.columnIndex="16" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../../res/pipeR.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </GridPane>
                </children>
             </VBox>
+           <Button layoutX="30.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleButton" text="Back" />
          </children>
       </Pane>
+      <ImageView fx:id="lvlComplete" fitHeight="400.0" fitWidth="500.0" layoutX="200.0" layoutY="150.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/LevelComplete.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nextLevel2c" layoutX="420.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
    </children>
 </AnchorPane>
