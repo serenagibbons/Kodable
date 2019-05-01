@@ -118,6 +118,13 @@ public class Controller {
 		path.getElements().add(new MoveTo(mario.getX()+27, mario.getY()+27));
 
 		switch(value) {
+		case "playLvl1a":
+			// Create a solution path for level1a
+			path.getElements().add(new HLineTo(250));
+			path.getElements().add(new VLineTo(140));
+			path.getElements().add(new HLineTo(540));
+			path.getElements().add(new VLineTo(250));
+			break;
 		case "playLvl1c":
 			// Create a solution path for level1c
 			path.getElements().add(new HLineTo(310));
