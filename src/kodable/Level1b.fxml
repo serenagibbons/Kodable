@@ -451,7 +451,47 @@
                   </GridPane>
                </children>
             </VBox>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b23a0f" height="102.0" layoutX="365.0" stroke="BLACK" strokeType="INSIDE" width="434.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="694.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="588.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="482.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="374.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="97.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="182.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="264.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <ImageView fx:id="left" fitHeight="60.0" fitWidth="60.0" layoutX="22.0" layoutY="22.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/ArrowLeft.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="right" fitHeight="60.0" fitWidth="60.0" layoutX="105.0" layoutY="22.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/ArrowRight.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="up" fitHeight="60.0" fitWidth="60.0" layoutX="190.0" layoutY="22.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/ArrowUP.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="down" fitHeight="60.0" fitWidth="60.0" layoutX="272.0" layoutY="21.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/ArrowDown.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="playLvl1a" layoutX="811.0" layoutY="14.0" mnemonicParsing="false" onAction="#playPath" prefHeight="75.0" prefWidth="75.0" text="Go!">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="move1" fitHeight="60.0" fitWidth="60.0" layoutX="393.0" layoutY="22.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="move2" fitHeight="60.0" fitWidth="60.0" layoutX="501.0" layoutY="22.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="move3" fitHeight="60.0" fitWidth="60.0" layoutX="607.0" layoutY="22.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="move4" fitHeight="60.0" fitWidth="60.0" layoutX="713.0" layoutY="21.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="30.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleButton" text="Back" />
          </children>
       </Pane>
    </children>
+   
 </AnchorPane>
