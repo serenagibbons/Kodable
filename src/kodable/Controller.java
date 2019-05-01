@@ -114,7 +114,6 @@ public class Controller {
 		}
 	}
 	
-	/*FIX*/
 	// check if user sequence is correct
 	boolean isCorrectSequence(ActionEvent event) {
 		
@@ -160,6 +159,10 @@ public class Controller {
 			soln.add("right");
 			break;
 		}
+		
+		// if user sequence is empty
+		if (seq.isEmpty())
+			return false;
 		
 		// check user sequence (seq) against solution sequence (soln)
 		for (int i = 0; i < soln.size()-1; i++) {
