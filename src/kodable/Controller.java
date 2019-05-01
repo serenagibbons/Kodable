@@ -22,7 +22,6 @@ import javafx.scene.input.TransferMode;
 import javafx.scene.shape.HLineTo;
 import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
-import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.VLineTo;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -50,7 +49,7 @@ public class Controller {
 	private ImageView move1, move2, move3, move4, move5; // User-created moves by dropping arrows
 	
 	@FXML
-	private ImageView left, up, right, down, yellowIf;	// Arrow options to drag
+	private ImageView left, up, right, down;	// Arrow options to drag
 
 	// Drag and drop arrows to create sequence
 	@FXML
@@ -73,9 +72,6 @@ public class Controller {
 		case "down":
 			img = new Image("ArrowDown.jpg");
 			direction = "down";
-			break;
-		case "yellowIf":
-			img = new Image("yellow-square.jpg");
 			break;
 		}
 

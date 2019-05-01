@@ -37,31 +37,26 @@
                            </children></Pane>
                         <Pane layoutX="404.0" layoutY="10.0" prefHeight="98.0" prefWidth="470.0">
                            <children>
-                              <Button fx:id="playLvl2c" layoutX="-22.0" layoutY="21.0" mnemonicParsing="false" onAction="#playPath" prefHeight="56.0" prefWidth="56.0" text="Go!" />
-                              <Button fx:id="btnReset" layoutX="56.0" layoutY="21.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="Reset" />
-                              <ImageView fx:id="left" fitHeight="45.0" fitWidth="45.0" layoutX="132.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                              <Button fx:id="playLvl2c" layoutX="9.0" layoutY="21.0" mnemonicParsing="false" onAction="#playPath" prefHeight="56.0" prefWidth="56.0" text="Go!" />
+                              <Button fx:id="btnReset" layoutX="87.0" layoutY="21.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="Reset" />
+                              <ImageView fx:id="left" fitHeight="45.0" fitWidth="45.0" layoutX="192.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../bin/ArrowLeft.jpg" />
                                  </image>
                               </ImageView>
-                              <ImageView fx:id="up" fitHeight="45.0" fitWidth="45.0" layoutX="202.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                              <ImageView fx:id="up" fitHeight="45.0" fitWidth="45.0" layoutX="262.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../bin/ArrowUP.jpg" />
                                  </image>
                               </ImageView>
-                              <ImageView fx:id="down" fitHeight="45.0" fitWidth="45.0" layoutX="342.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                              <ImageView fx:id="down" fitHeight="45.0" fitWidth="45.0" layoutX="402.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../bin/ArrowDown.jpg" />
                                  </image>
                               </ImageView>
-                              <ImageView fx:id="right" fitHeight="45.0" fitWidth="45.0" layoutX="272.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
+                              <ImageView fx:id="right" fitHeight="45.0" fitWidth="45.0" layoutX="332.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../bin/ArrowRight.jpg" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fx:id="yellowIf" fitHeight="45.0" fitWidth="45.0" layoutX="412.0" layoutY="27.0" onDragDetected="#handleDragDetected" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@../../res/yellow-square.jpg" />
                                  </image>
                               </ImageView>
                            </children>
@@ -798,7 +793,7 @@
                               <Image url="@../../res/pipeR.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="yellowIf1" fitHeight="56.0" fitWidth="51.0" onDragDetected="#handleDragDetected" pickOnBounds="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                        <ImageView fx:id="yellowIf1" fitHeight="56.0" fitWidth="51.0" onDragDetected="#handleDragDetected" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
                            <image>
                               <Image url="@../../res/yellow-square.jpg" />
                            </image>
