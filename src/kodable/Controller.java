@@ -127,6 +127,14 @@ public class Controller {
 			soln.add("right");
 			soln.add("down");
 			break;
+		case "playLvl1b":
+			// Create solution sequence for level1b
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			break;
 		case "playLvl1c":
 			// Create solution sequence for level1c
 			soln.add("right");
@@ -146,6 +154,12 @@ public class Controller {
 			soln.add("right");
 			soln.add("down");
 			break;
+		case "playLvl2c":
+			// Create solution sequence for level2c
+			break;
+		case "playLvl3a":
+			// Create solution sequence for level3a
+			break;
 		case "playLvl3b":
 			// Create solution sequence for level3b
 			soln.add("right");
@@ -158,6 +172,9 @@ public class Controller {
 			soln.add("up");
 			soln.add("right");
 			break;
+		case "playLvl3c":
+			// Create solution sequence for level3c
+			break;
 		}
 		
 		// if user sequence is empty
@@ -166,7 +183,7 @@ public class Controller {
 		
 		// check user sequence (seq) against solution sequence (soln)
 		for (int i = 0; i < soln.size()-1; i++) {
-			if (!seq.get(i).equals(soln.get(i)))
+			if (!soln.get(i).equals(seq.get(i)))
 				return false;
 		}
 		return true;
