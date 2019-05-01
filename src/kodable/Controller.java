@@ -3,7 +3,6 @@ package kodable;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javafx.animation.Animation.Status;
 import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
 import javafx.event.ActionEvent;
@@ -174,6 +173,19 @@ public class Controller {
 			break;
 		case "playLvl3a":
 			// Create solution sequence for level3a
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
+			soln.add("down");
+			soln.add("right");
 			break;
 		case "playLvl3b":
 			// Create solution sequence for level3b
@@ -189,6 +201,20 @@ public class Controller {
 			break;
 		case "playLvl3c":
 			// Create solution sequence for level3c
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
+			soln.add("up");
+			soln.add("right");
 			break;
 		}
 		
