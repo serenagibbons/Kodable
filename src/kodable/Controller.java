@@ -44,7 +44,7 @@ public class Controller {
     private ImageView lvlComplete;
 	
 	@FXML
-	private Button nextLevel2a, nextLevel2b;
+	private Button nextLevel1a, nextLevel2a, nextLevel2b;
 
 	@FXML
 	private ImageView move1, move2, move2b, move3, move4; // User-created moves by dropping arrows
@@ -264,10 +264,17 @@ public class Controller {
 			value = ((Button)event.getSource()).getId();
 
 			switch(value) {
+			case "playLvl1a":
+				fadeIn(event, nextLevel1a);
+				break;
 			case "playLvl2a":
 				fadeIn(event, nextLevel2a);
+				break;
 			case "playLvl2b":
 				fadeIn(event, nextLevel2b);
+				break;
+			case "playLvl3b":
+				//fadeIn(event, nextLevel2b);
 			}
 
 	}
@@ -286,10 +293,15 @@ public class Controller {
     	value = ((Button)event.getSource()).getId();
 		
 		switch(value) {
+		case "nextLevel1a":
+			changeScene(event, "Level1b.fxml");
+			break;
 		case "nextLevel2a":
 			changeScene(event, "Level2b.fxml");
+			break;
 		case "nextLevel2b":
 			changeScene(event, "Level2c.fxml");
+			break;
 		}
     }
 	
