@@ -44,7 +44,7 @@ public class Controller {
     private ImageView lvlComplete;
 	
 	@FXML	// buttons to transition to next level
-	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b;
+	private Button nextLevel1a, nextLevel1b, nextLevel1c, nextLevel2a, nextLevel2b;
 
 	@FXML
 	private ImageView move1, move2, move2b, move3, move4, move5; // User-created moves by dropping arrows
@@ -281,6 +281,9 @@ public class Controller {
 			case "playLvl1b":
 				fadeIn(event, nextLevel1b);
 				break;
+			case "playLvl1c":
+				fadeIn(event, nextLevel1c);
+				break;
 			case "playLvl2a":
 				fadeIn(event, nextLevel2a);
 				break;
@@ -312,6 +315,9 @@ public class Controller {
 			break;
 		case "nextLevel1b":
 			changeScene(event, "Level1c.fxml");
+			break;
+		case "nextLevel1c":
+			changeScene(event, "LevelSelector.fxml");
 			break;
 		case "nextLevel2a":
 			changeScene(event, "Level2b.fxml");
