@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import javafx.animation.Animation.Status;
+import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,6 +39,12 @@ public class Controller {
 
 	@FXML
 	private ImageView mario;
+	
+	@FXML
+    private ImageView lvlComplete;
+	
+	@FXML
+	private Button nextLevel2a;
 
 	@FXML
 	private ImageView move1, move2, move2b, move3, move4; // User-created moves by dropping arrows
@@ -252,23 +259,36 @@ public class Controller {
 			transition.setPath(path);
 			transition.play();
 			
-			/*transition.setOnFinished(new EventHandler<ActionEvent>() {
-				
-				@Override
-				public void handle(ActionEvent event) {
-					changeScene(event, "LevelSelector.fxml");
-					
-				}
-			});*/
+			fadeIn(event, lvlComplete);
+			
+			value = ((Button)event.getSource()).getId();
 
-			/*FIX - if statement body never reached*/
-			// if mario completes the path, exit level
-			if(transition.getStatus()==Status.STOPPED) {
-				changeScene(event, "LevelSelector.fxml");
+			switch(value) {
+			case "playLvl2a":
+				fadeIn(event, nextLevel2a);
 			}
 
 	}
 
+	// Fade in transition when level complete
+	void fadeIn(ActionEvent event, Node node) {
+		FadeTransition fadeIn = new FadeTransition(new Duration(2500), node);
+		fadeIn.setFromValue(0);
+		fadeIn.setToValue(1);
+		fadeIn.setDelay(new Duration(6100));
+		fadeIn.play();		
+	}
+	
+    @FXML
+    void nextLevel(ActionEvent event) throws IOException {
+    	value = ((Button)event.getSource()).getId();
+		
+		switch(value) {
+		case "nextLevel2a":
+			changeScene(event, "Level2b.fxml");
+		}
+    }
+	
 	@FXML
 	void handleButton(ActionEvent event) throws Exception {
 		value = ((Button)event.getSource()).getText();	// get text of button input
