@@ -422,7 +422,7 @@
             <Image url="@../../res/ArrowDown.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="playLvl1c" layoutX="811.0" layoutY="14.0" mnemonicParsing="false" onAction="#playPath" prefHeight="75.0" prefWidth="75.0" text="Go!">
+      <Button fx:id="playLvl3a" layoutX="811.0" layoutY="14.0" mnemonicParsing="false" onAction="#playPath" prefHeight="75.0" prefWidth="75.0" text="Go!">
          <font>
             <Font size="25.0" />
          </font>
@@ -438,5 +438,5 @@
             <Image url="@../../res/LevelComplete.png" />
          </image>
       </ImageView>
-      <Button fx:id="nextLevel1c" layoutX="420.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
+      <Button fx:id="nextLevel3a" layoutX="375.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
    </AnchorPane>
