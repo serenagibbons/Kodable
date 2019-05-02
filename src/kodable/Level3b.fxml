@@ -397,14 +397,14 @@
                   <Image url="@../../res/block1.png" />
                </image>
             </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../res/pipeR.png" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="346.0" layoutY="175.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
                <image>
                   <Image url="@../../res/block1.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="3">
-               <image>
-                  <Image url="@../../res/pipeR.png" />
                </image>
             </ImageView>
          </children>

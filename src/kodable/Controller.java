@@ -173,16 +173,6 @@ public class Controller {
 			soln.add("right");
 			soln.add("down");
 			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
 			break;
 		case "playLvl3b":
 			// Create solution sequence for level3b
@@ -329,9 +319,8 @@ public class Controller {
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
 			
-			//To run the game without worrying about the arrows if they are commented out
 			if (!isCorrectSequence(event))
-			return;
+				return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
@@ -434,7 +423,7 @@ public class Controller {
 			changeScene(event, "Level2a.fxml");
 			break;
 		case "Loops in the Desert":
-			changeScene(event, "Level3b.fxml");
+			changeScene(event, "Level3a.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");
