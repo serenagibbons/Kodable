@@ -340,11 +340,6 @@
                               <Image url="@../../res/block1.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="100.0" fitWidth="50.0" GridPane.columnIndex="16" GridPane.rowIndex="9" GridPane.valignment="BOTTOM">
-                           <image>
-                              <Image url="@../../res/pipeR.png" />
-                           </image>
-                        </ImageView>
                         <ImageView fitHeight="50.0" fitWidth="55.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <image>
                               <Image url="@../../res/block1.png" />
@@ -388,6 +383,11 @@
                         <ImageView fx:id="mario" fitHeight="50.0" fitWidth="55.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
                            <image>
                               <Image url="@../../res/mario.gif" />
+                           </image>
+                        </ImageView>
+                  		<ImageView fitHeight="100.0" fitWidth="50.0" GridPane.columnIndex="16" GridPane.rowIndex="9" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../../res/pipeR.png" />
                            </image>
                         </ImageView>
            
@@ -438,5 +438,20 @@
             <Image url="@../../res/LevelComplete.png" />
          </image>
       </ImageView>
-      <Button fx:id="nextLevel3a" layoutX="375.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
+      <Button fx:id="nextLevel3a" layoutX="415.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
+            <ImageView fitHeight="35.0" fitWidth="63.0" layoutX="455.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/curvedArrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="63.0" layoutX="457.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../res/curvedArrow.png" />
+         </image>
+      </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="510.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/num6.jpg" />
+         </image>
+      </ImageView>
    </AnchorPane>
