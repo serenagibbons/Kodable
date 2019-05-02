@@ -46,10 +46,10 @@ public class Controller {
 	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b, nextLevel2c, returnBtn;
 
 	@FXML
-	private ImageView move1, move2, move2b, move3, move4, move5; // User-created moves by dropping arrows
-
+	private ImageView move1, move2, move3, move4, move5; // User-created moves by dropping arrows
+	
 	@FXML
-	private ImageView left, up, right, down, yellowIf;	// Arrow options to drag
+	private ImageView left, up, right, down;	// Arrow options to drag
 
 	// Drag and drop arrows to create sequence
 	@FXML
@@ -72,9 +72,6 @@ public class Controller {
 		case "down":
 			img = new Image("ArrowDown.jpg");
 			direction = "down";
-			break;
-		case "yellowIf":
-			img = new Image("yellow-square.jpg");
 			break;
 		}
 
@@ -263,7 +260,7 @@ public class Controller {
 			// Create a solution path for level2a
 			path.getElements().add(new HLineTo(240));
 			path.getElements().add(new VLineTo(245));
-			path.getElements().add(new HLineTo(835));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl2b":
 			// Create a solution path for level2b
@@ -271,6 +268,7 @@ public class Controller {
 			path.getElements().add(new VLineTo(-80));
 			path.getElements().add(new HLineTo(835));
 			path.getElements().add(new VLineTo(140));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl2c":
 			// Create a solution path for level2b
