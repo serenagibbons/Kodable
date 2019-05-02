@@ -434,29 +434,11 @@ public class Controller {
 		case "Classic Mario":		
 			changeScene(event, "Level1a.fxml");
 			break;
-		case "Btn1b":
-			changeScene(event, "Level1b.fxml");
-			break;
-		case "Btn1c":
-			changeScene(event, "Level1c.fxml");
-			break;
 		case "If Statements Underground":
 			changeScene(event, "Level2a.fxml");
 			break;
-		case "Btn2b":
-			changeScene(event, "Level2b.fxml");
-			break;
-		case "Btn2c":
-			changeScene(event, "Level2c.fxml");
-			break;
 		case "Loops in the Desert":
 			changeScene(event, "Level3a.fxml");
-			break;
-		case "Btn3b":
-			changeScene(event, "Level3b.fxml");
-			break;
-		case "Btn3c":
-			changeScene(event, "Level3c.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");
