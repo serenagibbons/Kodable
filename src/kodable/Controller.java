@@ -173,23 +173,9 @@ public class Controller {
 			soln.add("right");
 			soln.add("down");
 			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
 			break;
 		case "playLvl3b":
 			// Create solution sequence for level3b
-			soln.add("right");
-			soln.add("down");
-			soln.add("right");
-			soln.add("down");
 			soln.add("right");
 			soln.add("down");
 			soln.add("right");
@@ -198,18 +184,6 @@ public class Controller {
 			break;
 		case "playLvl3c":
 			// Create solution sequence for level3c
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
 			soln.add("right");
 			soln.add("up");
 			soln.add("right");
@@ -305,7 +279,7 @@ public class Controller {
 			path.getElements().add(new VLineTo(360));
 			path.getElements().add(new HLineTo(480));
 			path.getElements().add(new VLineTo(90));
-			path.getElements().add(new HLineTo(835));
+			path.getElements().add(new HLineTo(860));
 			break;
 		case "playLvl3c":
 			// Create a solution path for level3c
@@ -333,9 +307,8 @@ public class Controller {
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
 			
-			//To run the game without worrying about the arrows if they are commented out
 			if (!isCorrectSequence(event))
-			return;
+				return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
@@ -434,29 +407,11 @@ public class Controller {
 		case "Classic Mario":		
 			changeScene(event, "Level1a.fxml");
 			break;
-		case "Btn1b":
-			changeScene(event, "Level1b.fxml");
-			break;
-		case "Btn1c":
-			changeScene(event, "Level1c.fxml");
-			break;
 		case "If Statements Underground":
 			changeScene(event, "Level2a.fxml");
 			break;
-		case "Btn2b":
-			changeScene(event, "Level2b.fxml");
-			break;
-		case "Btn2c":
-			changeScene(event, "Level2c.fxml");
-			break;
 		case "Loops in the Desert":
 			changeScene(event, "Level3a.fxml");
-			break;
-		case "Btn3b":
-			changeScene(event, "Level3b.fxml");
-			break;
-		case "Btn3c":
-			changeScene(event, "Level3c.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");
