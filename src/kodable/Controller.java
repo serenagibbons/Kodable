@@ -198,6 +198,7 @@ public class Controller {
 			break;
 		case "playLvl3c":
 			// Create solution sequence for level3c
+			soln.add("right");
 			soln.add("up");
 			soln.add("right");
 			soln.add("up");
@@ -308,20 +309,21 @@ public class Controller {
 			break;
 		case "playLvl3c":
 			// Create a solution path for level3c
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
-			path.getElements().add(new VLineTo(0));
-			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new HLineTo(440));
+			path.getElements().add(new VLineTo(-30));
+			path.getElements().add(new HLineTo(500));
+			path.getElements().add(new VLineTo(-80));
+			path.getElements().add(new HLineTo(560));
+			path.getElements().add(new VLineTo(-130));
+			path.getElements().add(new HLineTo(620));
+			path.getElements().add(new VLineTo(-180));
+			path.getElements().add(new HLineTo(660));
+			path.getElements().add(new VLineTo(-230));
+			path.getElements().add(new HLineTo(710));
+			path.getElements().add(new VLineTo(-280));
+			path.getElements().add(new HLineTo(770));
+			path.getElements().add(new VLineTo(-330));
+			path.getElements().add(new HLineTo(870));
 			break;
 		}
 			
@@ -428,7 +430,7 @@ public class Controller {
 		case "Play!":
 			changeScene(event, "LevelSelector.fxml");
 			break;
-		case "Btn1a":		
+		case "Classic Mario":		
 			changeScene(event, "Level1a.fxml");
 			break;
 		case "Btn1b":
@@ -437,7 +439,7 @@ public class Controller {
 		case "Btn1c":
 			changeScene(event, "Level1c.fxml");
 			break;
-		case "Btn2a":
+		case "If Statements Underground":
 			changeScene(event, "Level2a.fxml");
 			break;
 		case "Btn2b":
@@ -446,7 +448,7 @@ public class Controller {
 		case "Btn2c":
 			changeScene(event, "Level2c.fxml");
 			break;
-		case "Btn3a":
+		case "Loops in the Desert":
 			changeScene(event, "Level3a.fxml");
 			break;
 		case "Btn3b":
