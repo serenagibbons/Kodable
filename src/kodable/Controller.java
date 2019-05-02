@@ -332,9 +332,10 @@ public class Controller {
 	@FXML
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
-			//To run the game without worrying about the arrows
-//			if (!isCorrectSequence(event))
-//				return;
+			
+			//To run the game without worrying about the arrows if they are commented out
+			if (!isCorrectSequence(event))
+			return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
