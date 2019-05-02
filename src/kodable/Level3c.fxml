@@ -465,17 +465,17 @@
                               <Image url="@../../res/coin.gif" />
                            </image>
                         </ImageView>
+                            <ImageView fx:id="mario" fitHeight="55.0" fitWidth="55.0" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../../res/mario.gif" />
+                           </image>
+                        </ImageView>
                         <ImageView fitHeight="65.0" fitWidth="55.0" GridPane.columnIndex="16" GridPane.rowIndex="2">
                            <image>
                               <Image url="@../../res/pipeR.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="mario" fitHeight="55.0" fitWidth="55.0" GridPane.rowIndex="9">
-                           <image>
-                              <Image url="@../../res/mario.gif" />
-                           </image>
-                        </ImageView>
-           
+         
          </children>
       </GridPane>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b23a0f" height="102.0" layoutX="365.0" stroke="BLACK" strokeType="INSIDE" width="434.0" />
@@ -524,4 +524,19 @@
          </image>
       </ImageView>
       <Button fx:id="nextLevel3c" layoutX="375.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Return to Level Selection" />
+  	<ImageView fitHeight="35.0" fitWidth="63.0" layoutX="555.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/curvedArrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="63.0" layoutX="557.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../res/curvedArrow.png" />
+         </image>
+      </ImageView>
+                      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="610.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/num7.jpg" />
+         </image>
+      </ImageView>
    </AnchorPane>

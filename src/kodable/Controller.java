@@ -187,18 +187,6 @@ public class Controller {
 			soln.add("right");
 			soln.add("up");
 			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
-			soln.add("up");
-			soln.add("right");
 			break;
 		}
 		
@@ -423,7 +411,7 @@ public class Controller {
 			changeScene(event, "Level2a.fxml");
 			break;
 		case "Loops in the Desert":
-			changeScene(event, "Level3a.fxml");
+			changeScene(event, "Level3c.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");

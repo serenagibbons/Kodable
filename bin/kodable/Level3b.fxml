@@ -456,7 +456,7 @@
             <Image url="@../../res/LevelComplete.png" />
          </image>
       </ImageView>
-      <Button fx:id="nextLevel3b" layoutX="445.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
+      <Button fx:id="nextLevel3b" layoutX="415.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextLevel" opacity="0.0" text="Next Level" />
       <ImageView fitHeight="35.0" fitWidth="63.0" layoutX="405.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../res/curvedArrow.png" />
@@ -472,5 +472,10 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="634.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/num7.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
