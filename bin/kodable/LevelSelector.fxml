@@ -38,14 +38,8 @@
                </font>
             </Label>
             <Button fx:id="btn1a" layoutX="364.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleButton" stylesheets="@startWindow.css" text="Classic Mario" />
-            <Button fx:id="btn1b" layoutX="403.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn1b" />
-            <Button fx:id="btn1c" layoutX="607.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn1c" />
             <Button fx:id="btn2a" layoutX="291.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleButton" stylesheets="@startWindow.css" text="If Statements Underground" />
-            <Button fx:id="btn2b" layoutX="403.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn2b" />
-            <Button fx:id="btn2c" layoutX="607.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn2c" />
             <Button fx:id="btn3a" layoutX="332.0" layoutY="490.0" mnemonicParsing="false" onAction="#handleButton" stylesheets="@startWindow.css" text="Loops in the Desert" />
-            <Button fx:id="btn3b" layoutX="403.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn3b" />
-            <Button fx:id="btn3c" layoutX="607.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleButton" opacity="0.0" stylesheets="@startWindow.css" text="Btn3c" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e25819" height="121.0" layoutX="258.0" layoutY="56.0" stroke="WHITE" strokeType="INSIDE" width="391.0" />
             <Label alignment="CENTER" layoutX="258.0" layoutY="77.0" prefHeight="79.0" prefWidth="391.0" text="SELECT A LEVEL" textFill="WHITE" wrapText="true">
                <font>
