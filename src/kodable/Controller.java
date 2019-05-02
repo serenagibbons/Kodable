@@ -43,7 +43,7 @@ public class Controller {
     private ImageView lvlComplete;
 	
 	@FXML	// buttons to transition to next level
-	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b, nextLevel2c, returnBtn;
+	private Button nextLevel1a, nextLevel1b, nextLevel2a, nextLevel2b, nextLevel2c, nextLevel3a,nextLevel3b,nextLevel3c, returnBtn;
 
 	@FXML
 	private ImageView move1, move2, move3, move4, move5; // User-created moves by dropping arrows
@@ -278,6 +278,22 @@ public class Controller {
 			path.getElements().add(new VLineTo(27));
 			path.getElements().add(new HLineTo(860));
 			break;
+		case "playLvl3a":
+			// Create a solution path for level3a
+			path.getElements().add(new HLineTo(90));
+			path.getElements().add(new VLineTo(80));
+			path.getElements().add(new HLineTo(140));
+			path.getElements().add(new VLineTo(130));
+			path.getElements().add(new HLineTo(190));
+			path.getElements().add(new VLineTo(180));
+			path.getElements().add(new HLineTo(240));
+			path.getElements().add(new VLineTo(230));
+			path.getElements().add(new HLineTo(290));
+			path.getElements().add(new VLineTo(280));
+			path.getElements().add(new HLineTo(340));
+			path.getElements().add(new VLineTo(330));
+			path.getElements().add(new HLineTo(500));
+			break;
 		case "playLvl3b":
 			// Create a solution path for level3b
 			path.getElements().add(new HLineTo(250));
@@ -290,6 +306,23 @@ public class Controller {
 			path.getElements().add(new VLineTo(90));
 			path.getElements().add(new HLineTo(835));
 			break;
+		case "playLvl3c":
+			// Create a solution path for level3c
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			path.getElements().add(new VLineTo(0));
+			path.getElements().add(new HLineTo(0));
+			break;
 		}
 			
 	}
@@ -297,9 +330,9 @@ public class Controller {
 	@FXML
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
-			
-			if (!isCorrectSequence(event))
-				return;
+			//To run the game without worrying about the arrows
+//			if (!isCorrectSequence(event))
+//				return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
@@ -330,8 +363,15 @@ public class Controller {
 			case "playLvl2c":
 				fadeIn(event, nextLevel2c);
 				break;
+			case "playLvl3a":
+				fadeIn(event, nextLevel3a);
+				break;
 			case "playLvl3b":
-				//fadeIn(event, nextLevel2b);
+				fadeIn(event, nextLevel3b);
+				break;
+			case "playLvl3c":
+				fadeIn(event, nextLevel3c);
+				break;
 			}
 
 	}
@@ -366,6 +406,15 @@ public class Controller {
 			changeScene(event, "Level2c.fxml");
 			break;
 		case "nextLevel2c":
+			changeScene(event, "LevelSelector.fxml");
+			break;
+		case "nextLevel3a":
+			changeScene(event, "Level3b.fxml");
+			break;
+		case "nextLevel3b":
+			changeScene(event, "Level3c.fxml");
+			break;
+		case "nextLevel3c":
 			changeScene(event, "LevelSelector.fxml");
 			break;
 		}
