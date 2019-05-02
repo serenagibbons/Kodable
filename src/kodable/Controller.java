@@ -11,6 +11,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -303,12 +305,55 @@ public class Controller {
 			
 	}
 	
+	void incorrectSequence() {
+		// To display an error message for an incorrect sequence or pattern
+		Alert errorAlert = new Alert(AlertType.ERROR);
+		errorAlert.setHeaderText("Incorrect Sequence!");
+		errorAlert.setContentText("This is the incorrect squence of directions! Please try again!");
+		errorAlert.showAndWait();
+	
+	}
+
+	
 	@FXML
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
 			
-			if (!isCorrectSequence(event))
+			value = ((Button)event.getSource()).getId();
+					
+			if (!isCorrectSequence(event)) {
+				incorrectSequence();
+				switch(value) {
+				case "playLvl1a":
+					changeScene(event, "Level1a.fxml");
+					break;
+				case "playLvl1b":
+					changeScene(event, "Level1b.fxml");
+					break;
+				case "playLvl1c":
+					changeScene(event, "Level1c.fxml");
+					break;
+				case "playLvl2a":
+					changeScene(event, "Level2a.fxml");
+					break;
+				case "playLvl2b":
+					changeScene(event, "Level2b.fxml");
+					break;
+				case "playLvl2c":
+					changeScene(event, "Level2c.fxml");
+					break;
+				case "playLvl3a":
+					changeScene(event, "Level3a.fxml");
+					break;
+				case "playLvl3b":
+					changeScene(event, "Level3b.fxml");
+					break;
+				case "playLvl3c":
+					changeScene(event, "Level3c.fxml");
+					break;
+				}
 				return;
+			}
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
@@ -318,7 +363,6 @@ public class Controller {
 			
 			fadeIn(event, lvlComplete);
 			
-			value = ((Button)event.getSource()).getId();
 
 			switch(value) {
 			case "playLvl1a":
@@ -360,6 +404,7 @@ public class Controller {
 		fadeIn.setDelay(new Duration(6100));
 		fadeIn.play();		
 	}
+	
 	
     @FXML
     void nextLevel(ActionEvent event) throws IOException {
