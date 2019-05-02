@@ -11,6 +11,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -294,12 +296,22 @@ public class Controller {
 			
 	}
 	
+	void incorrectSequence() {
+		// To display an error message for an incorrect sequence or pattern
+		Alert errorAlert = new Alert(AlertType.ERROR);
+		errorAlert.setHeaderText("Incorrect Sequence!");
+		errorAlert.setContentText("This is the incorrect squence of directions! Please try again!");
+		errorAlert.showAndWait();
+	}
+	
+	
 	@FXML
 	void playPath(ActionEvent event) throws IOException {
 			createPathSolution(event);
 			
-			if (!isCorrectSequence(event))
-				return;
+			if (!isCorrectSequence(event)) {
+			incorrectSequence();
+			} //return;
 			
 			PathTransition transition = new PathTransition();
 			transition.setNode(mario);
