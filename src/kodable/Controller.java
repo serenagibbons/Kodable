@@ -411,7 +411,7 @@ public class Controller {
 			changeScene(event, "Level2a.fxml");
 			break;
 		case "Loops in the Desert":
-			changeScene(event, "Level3c.fxml");
+			changeScene(event, "Level3a.fxml");
 			break;
 		case "Back":
 			changeScene(event, "LevelSelector.fxml");

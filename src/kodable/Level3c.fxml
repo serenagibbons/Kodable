@@ -536,7 +536,7 @@
       </ImageView>
                       <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="610.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../res/num7.jpg" />
+            <Image url="@../../res/num7.png" />
          </image>
       </ImageView>
    </AnchorPane>
